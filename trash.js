@@ -13,7 +13,7 @@ class trash {
   }
   update() {
     this.pos.x -= 2;
-    if(this.pos.x >= mouseX && this.pos.x <= mouseX+20 && this.pos.y >= mouseY-17 && this.pos.y <= mouseY+17) {
+    if(this.pos.x >= mouseX && this.pos.x <= mouseX+20 && this.pos.y >= mouseY-17 && this.pos.y <= mouseY+17 || this.pos.x < -10) {
       this.pos.x = 400;
       this.pos.y = random(400);
     }
