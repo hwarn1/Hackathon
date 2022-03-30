@@ -1,5 +1,6 @@
 let pieces = [];
 var sceneNum = 1;
+let swimmers = [];
 
 function setup() {
   createCanvas(400, 400);
@@ -7,6 +8,9 @@ function setup() {
   
   for (var i = 0; i < 5; i++) {
     pieces[i] = new trash(400,random(400), 10, 10);
+  }
+  for (var f = 0; f < 3; f++) {
+    swimmers[f] = new fish(400, random(400), 15, 10);
   }
   
 }
@@ -32,7 +36,10 @@ function game() {
   for (var i = 0; i < 5; i++) {
     pieces[i].show();
     pieces[i].update();
-    
+  }
+  for (var f = 0; f < 3; f++) {
+    swimmers[f].show();
+    swimmers[f].update();
   }
   
   //trash bin (always where mouse is)
