@@ -13,10 +13,20 @@ class trash {
   }
   update() {
     this.pos.x -= 2;
-    if(this.pos.x >= mouseX && this.pos.x <= mouseX+20 && this.pos.y >= mouseY-17 && this.pos.y <= mouseY+17 || this.pos.x < -10) {
+    if(this.pos.x >= mouseX && this.pos.x <= mouseX+20 && this.pos.y >= mouseY-17 && this.pos.y <= mouseY+17) {
       this.pos.x = 400;
       this.pos.y = random(400);
-    }
+      score++;
+    } else if (this.pos.x < -10) {
+      condition = 11;
+      this.pos.x = 400;
+      this.pos.y = random(400);
+      for (var i = 0; i < pieces.length; i++) {
+      pieces[i] = new trash(400,random(400), 10, 10);
+      }
+      
+    } 
+    
   }
   
     
