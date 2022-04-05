@@ -79,6 +79,7 @@ function learn() {
   fill(255);
   noStroke();
   text("BACK", 20, 380);
+  
 }
 
 function game() {
@@ -105,6 +106,7 @@ function game() {
   fill(200, 40, 100);
   textSize(20);
   text("Score:" + score, 20, 20);
+  
 }
 
 function gameOver() {
