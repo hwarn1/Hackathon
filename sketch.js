@@ -6,6 +6,7 @@ var condition = 9;
 let swimmers = [];
 let score = 0;
 let facts = ["Each day, 8 million piece of plastic end \nup in our ocean system.", "Only 9% of the world's plastic actually \ngets recycled.", "76 trillion macro and microplastics \nare in our oceans.", "The ocean is being polluted with \napproximately 12.7 million tons of \nplastic every year.", "100% of infant sea turtles have some \nplastic in their stomach.", "88% of our ocean surfaces have \nplastic waste pollution", "It is anticipated that by 2050, the ocean \nwill contain more plastic than fish.", "Approximately 1 in every 3 fish caught \nfor humans to eat has plastic in it.", "It is estimated that plastic microbeads \nare 1 million times more toxic than \nregular seawater."]
+var r;
 
 function setup() {
   createCanvas(400, 400);
@@ -17,7 +18,7 @@ function setup() {
   for (var f = 0; f < 3; f++) {
     swimmers[f] = new fish(400, random(400), 15, 10);
   }
-  
+  r = floor(random(0,8));
 }
 
 function home() {
@@ -41,7 +42,7 @@ function home() {
   textSize(18);
   text("Did you know? ", 10, 355);
   textSize(15);
-  text(facts[8], 135, 355)
+  text(facts[r], 135, 355)
 }
 
 function learn() {
