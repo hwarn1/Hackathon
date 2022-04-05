@@ -5,7 +5,7 @@ let pieces = [];
 var condition = 9;
 let swimmers = [];
 let score = 0;
-let facts = ["Each day, 8 million piece of plastic end up in our ocean system.", "Only 9% of the world's plastic actually gets recycled.", "76 trillion macro and microplastics are in our oceans.", "The ocean is being polluted with approximately 12.7 million tons of plastic every year.", "100% of infant sea turtles have some plastic in their stomach.", "88% of our ocean surfaces have plastic waste pollution", "It is anticipated that by 2050, the ocean will contain more plastics than fish.", "Approximately 1 in every 3 fish caught for humans to eat has plastic in it.", "It is estimated that plastic microbeads are 1 million times more toxic than regular seawater."]
+let facts = ["Each day, 8 million piece of plastic end \nup in our ocean system.", "Only 9% of the world's plastic actually \ngets recycled.", "76 trillion macro and microplastics \nare in our oceans.", "The ocean is being polluted with \napproximately 12.7 million tons of \nplastic every year.", "100% of infant sea turtles have some \nplastic in their stomach.", "88% of our ocean surfaces have \nplastic waste pollution", "It is anticipated that by 2050, the ocean \nwill contain more plastic than fish.", "Approximately 1 in every 3 fish caught \nfor humans to eat has plastic in it.", "It is estimated that plastic microbeads \nare 1 million times more toxic than \nregular seawater."]
 
 function setup() {
   createCanvas(400, 400);
@@ -27,19 +27,21 @@ function home() {
   textSize(40);
   text("Save the Ocean!", 50, 150);
   
-  rect(100, 200, 200, 70);
+  rect(100, 180, 200, 70);
   fill(100, 200, 200);
-  text("PLAY", 150, 250);
+  text("PLAY", 150, 230);
   
   fill(255);
-  rect(100, 280, 200, 70);
+  rect(100, 260, 200, 70);
   fill(100, 200, 200);
   textSize(28);
-  text("HOW TO PLAY", 105, 330);
+  text("HOW TO PLAY", 105, 305);
   
   fill(255);
+  textSize(18);
+  text("Did you know? ", 10, 355);
   textSize(15);
-  text("Did you know? " + facts[floor(0, 10)], 20, 375);
+  text(facts[8], 135, 355)
 }
 
 function learn() {
