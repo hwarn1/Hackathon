@@ -1,4 +1,4 @@
-class trash {
+class trash2 {
   
   constructor(x,y, width, height) {
     this.pos = createVector(x, y);
@@ -22,9 +22,11 @@ class trash {
       this.pos.x = 400;
       this.pos.y = random(400);
       for (var i = 0; i < pieces.length; i++) {
-      pieces[i] = new trash(400,random(400), 10, 10);
+      pieces[i] = new trash2(400,random(400), 10, 10);
       }
       
     } 
     
   }
+  
+}
