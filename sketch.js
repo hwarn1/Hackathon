@@ -75,7 +75,7 @@ function setup() {
   //createCanvas(400, 400);
   
   for (var n = 0; n < 5; n++) {
-    pieces[n] = new trash(400,random(400), 10, 10);
+    pieces[n] = new trash2(400,random(400), 10, 10);
   }
   for (var f = 0; f < 3; f++) {
     swimmers[f] = new fish(400, random(400), 15, 10);
